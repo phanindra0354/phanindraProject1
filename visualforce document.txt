@@ -1,0 +1,162 @@
+Visualforce : 
+ 1.Visualforce is a framework  .
+ 2. Using Visulforce allows  developers to build sophisticated, custom user interfaces 
+    that can be hosted natively on the Lightning platform. 
+ 3. Visualforce framework includes tag based markups
+ 4. Visualforce pages consists of 
+    	a. Visualforce Markup
+    	b. Visualforce Controller
+ 5. Visualforce Markup :
+    a. it is a tag-based programming 
+    b. It consists of Visualforce components and Scripting elements .
+    c. Visualforce components  
+    	1. These are pre-defined components which are provided by salesforce to build 
+    		rich user interface 
+    	2. Syntax: 
+    		<!--	<apex:componentName attribute=value attriute =value />  
+					<apex:page> ,<apex:pageBlock>,<apex:pageBlockSection><apex:pageBlockSectionItem>....
+			-->
+     d. Scripting Elements :
+       1. Any scripting language that is supported by browser is also supported by visualforce.
+       Example : 
+    	Html,javascript,Ajax,Jquery,Node.js,backbone.js,Angular.js.....
+    
+  6.Visualforce Controller: 
+   	 a.Controllers are the set of instructions ,that will be executed when user interacts with 
+       components on the pages .
+     b.action can be manipulation of data or fetch of data or complexed logic.
+     c.There are three types of controllers 
+    	1. StandardController 
+    	2. Custom Controller
+    	3. extentions
+    d. StandardController : 
+    	1. If we want to reffer  standard functionalities or properties defined on the objects 
+           we will use standardController.
+    	
+    e. Controller : 
+    	If we want to define custom logics or functionalities then we use controller .
+        Controller is an apex.
+    
+    f. extentions : 
+    	If want to use standard functionalities along with some custom functionalities we will use 
+    	extentions
+    
+   7. Where can we use visualforce ??
+    	a. To override standard Buttons 
+    	b. To override standard links
+    	c. To create Custom buttons and links on standard Pages 
+    	d. To create sidebar components
+    	e. To create custom user interfaces.
+    
+    8. Webservers : 
+    	These are used to build web applications 
+    	Example : 
+    	apache tomcat 
+    
+    9. Application Servers :
+    	These are used to build web applications and enterprise applications 
+    	Example  :
+    	Tomcat, weblogic,jetty,jboss...
+    
+    10. Visualforce pages are running user context.
+    
+    11.In how many ways we can create VF pages .	
+    	a. Standard Navigation : 
+    	 	Setup
+    		|--->Build
+    			 |--->Develop
+    				  |---> Lightning Components
+    						|---> New 
+    
+    		Step 1: Enter PageName 
+    		Step 2: Create the body
+    		Step 3: Save 
+    		Step 4: Click on preview
+    
+    	b. Using URL :
+    		
+    	   1. Enable Development Mode 
+    			Setup
+    			|--->Adminster
+    				 |--->Manage users
+    					  |---> Users
+    							|--->Select User
+    								 |---> Click on Edit
+    									   |---> Enable Development
+    											 |--->Save
+    
+    	
+    		2. https://serverinstance.salesforce.com/apex/pageName
+    			Example : https://ap5.salesforce.com/apex/MyPage
+    			Note : when we give url ,it will check weather page exists, if the page doesnt exist
+    				   it will show link to create a page.
+    
+    	c. Developer console : 
+    			User Name 
+    			|--->Developer Console 
+    				 |---> File 
+    					   |---> New 
+    						     |---> Visualforce Page 
+    								   |---> Enter Page Name 
+    										 |---> Create Body
+    												|-->Save It (ctl+s)
+    
+    
+     12. All the VF pages will have .vfp  extentions
+     13. API version 43.0 
+     14. Every element in the VF page should strict xml format.
+     <!--
+    	 a. every opening elements should have closing element 
+    		<name> </name>
+    		<LastName> Myla </LastName>
+    
+    	 b. Inner elements should be closed first then outer elements should be closed
+    		<Name>
+    			<LastName> Myla</LastName>
+                <FirstName>Satish</FirstName>
+    		</Name>
+    
+    	 c. Case-Sensitve 
+    		<Name > Satish</name> ---> Error  Opening element should have corresponding closing element
+    	-->
+   1. apex:page
+   2. apex:sectionHeader
+   3. apex:form
+   4. apex:pageBlock
+   5. apex:pageBlockButtons
+    	a. CommandButton
+    	b. commandLink
+    	c. outputLink
+   6. inputField
+   7. outputfields
+   8. apex:pageBlockSection
+   9. inputComponents 
+    	a. inputText
+    	b. inputSecret
+    	c. inputHidden
+    	d. inputTextArea
+    	e. inputCheckbox
+    	f. inputFile
+    	g. selectList 
+    	h. selectOption
+    	i. selectOptions
+    	j. selectCheckbox
+    	k. selectRadio
+    10. output components 
+    	a. outputField
+    	b. outputText
+    	c. outputLabel
+    11. List view :
+    	 a. pageBlockTable
+    	 b. dataTable
+    	 c. dataList     	 d. repeat 
+     12. panelGrid
+     13. PanelGroup
+     14. inlineEditSupport 
+     15. apex:param
+     16. remoteAction 
+     17. define and insert 
+     18. includeScript
+     19. includeStyle
+    	
+</apex:page>
